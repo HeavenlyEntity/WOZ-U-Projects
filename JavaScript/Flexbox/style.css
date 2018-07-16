@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: "_DSC0639.jpg" ;
+  }
+  
+  .menu-container {
+    color: rgb(0, 0, 0);
+    background-color: black;
+    padding: 20px 0;
+    display: -webkit-flex;
+    justify-content: space-around;
+    color: rgb(0, 225, 255);
+    font-family: cursive; 
+    background-image: url("https://media.giphy.com/media/11YzmSgCUyvxV6/giphy.gif");
+  }
+  .header1{
+    margin-top: 20px;
+    padding-left: 12px;    
+    text-align: center;  
+  }
+  
+  .menu {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
+  .header-container {
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-image:url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .header {
+    border: solid black ;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    color: white;
+    background-image: url("https://media.giphy.com/media/3o6ozFNmtVPIWbJQf6/giphy.gif");
+    width: 485px;
+  }
+  .image-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-grid {
+    border:2px outset whitesmoke;  
+    background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif");
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .image-grid-item {
+  border: 5px solid white;
+  
+  }
+
+
+  .icons,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid white;
+    background-color: black;
+    height: 20px;
+    flex: 1;
+  }
+  .footer-one,
+.footer-three {
+
+  background-color: lightgrey;
+  flex: initial;
+  width: 300px; 
+}

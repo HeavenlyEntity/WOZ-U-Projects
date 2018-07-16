@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Bootstrap Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 align="center">Hello, world!</h1>
+
+    <div class="container">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-sm-6">
+                <!--Left Column-->
+            </div>
+            <div class="col-sm-6">
+                <!--Right Column-->
+            </div>
+        </div>
+
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-sm-4">
+                <!--Left Column-->
+            </div>
+            <div class="col-sm-8">
+                <!--Right Column-->
+            </div>
+        </div>
+
+        <!--Row with two columns divided in 1:3 ratio-->
+        <div class="row">
+            <div class="col-sm-3">
+                <!--Left Column-->
+            </div>
+            <div class="col-sm-9">
+                <!--Right Column-->
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><p>Box A</p></div>
+                <div class="col-md-4"><p>Box B</p></div>
+                <div class="col-md-4"><p>Box C</p></div>
+                <div class="col-md-4"><p>Box D</p></div>
+                <div class="col-md-4"><p>Box E</p></div>
+                <div class="col-md-4"><p>Box F</p></div>
+                <div class="col-md-4"><p>Box G</p></div>
+                <div class="col-md-4"><p>Box H</p></div>
+                <div class="col-md-4"><p>Box I</p></div>
+                <div class="col-md-4"><p>Box J</p></div>
+                <div class="col-md-4"><p>Box K</p></div>
+                <div class="col-md-4"><p>Box L</p></div>
+            </div>
+            <!-- 
+                Bootstrap Table
+                <table> - Wrapper element for displaying data in a tabular format.
+                <caption> - The title or summary of what the table holds.
+                <thead> - Container element for table header rows that defines headings for table columns.
+                <tbody> - Container element for table rows that defines the body of a table.
+                <tr> - Container element for a set of table cells that appears in a single row.
+                <th> - Special table cell for column headings.
+                <td> - Default table cell for placing data.
+            -->
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr class="active">
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="success">
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>19</td>
+                </tr>
+                <tr class="danger">
+                    <td>2</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>22</td>
+                </tr>
+                <tr class="warning">
+                    <td>3</td>
+                    <td>John</td>
+                    <td>Rambo</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Inline form-->
+        <form class="form-inline">
+            <div class=" form-group ">
+                <label for="Email ">Email</label>
+                <input type="email " class="form-control " id="Email " placeholder="Email ">
+            </div>
+            <div class="form-group">
+                <label for="Password ">Password</label>
+                <input type="password " class="form-control " id="Password " placeholder="Password ">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit " class="btn btn-primary ">Login</button>
+        </form>
+        <!--Vertical Form -->
+        <form>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <!--Horizontal Form-->
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="Email" class="control-label col-xs-2">Email</label>
+                <div class="col-xs-10">
+                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Password" class="control-label col-xs-2">Password</label>
+                <div class="col-xs-10">
+                    <input type="password" class="form-control" id="Password" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </form>
+        <div>
+        <!--
+            Bootstrap Buttons
+            Adding the following after the button class name does the following effects:
+
+            "btn btn-default"- Default Gray button with gradient
+            "btn btn-primary"- Provides extra visual weight to indicate primary action button in a set of buttons
+            "btn btn-info"	 - Can be used as an alternative to the Default button
+            "btn btn-success"- Indicates a successful or positive action
+            "btn btn-warning"- Indicates caution should be taken with this action
+            "btn btn-danger" - Indicates a dangerous or potentially negative action
+            "btn btn-link"	-  Deemphasize a button by making it look like a link while maintaining the button behavior.
+        -->
+        <button type="button" class="btn btn-default btn-lg btn-block">Default</button>
+
+        <button type="button" class="btn btn-primary">Primary</button>
+
+        <button type="button" class="btn btn-info">Info</button>
+
+        <button type="button" class="btn btn-success">Success</button>
+
+        <button type="button" class="btn btn-warning">Warning</button>
+
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-class-name"></span>
+            <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+        <div>
+            <!-- navigation tab button sytle-->
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Messages</a>
+                </li>
+            </ul>
+            </div>
+            <div>
+  
+                <!--Navigation tab Folder style with glyphicon -->
+
+        <ul class="nav nav-tabs">
+           <li class="active">
+             <a href="#">
+             <span class="glyphicon glyphicon-home"></span> Home</a>
+           </li>
+           <li>
+            <a href="#">
+             <span class="glyphicon glyphicon-user"></span> Profile</a>
+           </li>
+           <li>
+            <a href="#">
+             <span class="glyphicon glyphicon-envelope"></span> Messages</a>
+          </li>
+        </ul>
+    </div>
+
+    <!--Navagation Tabs Stack Style with glyphicon -->
+
+    <div>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active">
+            <a href="#">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-user"></span> Profile</a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-envelope"></span> Messages</a>
+        </li>
+    </ul>
+    </div>
+    
+    <!-- Drop Down Menu with glyphicon-->
+    
+    <div>
+            <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#">Home</a>
+        </li>
+      <li>
+            <a href="#">Profile</a>
+        </li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#">Inbox</a>
+                </li>
+                <li>
+                    <a href="#">Drafts</a>
+                </li>
+                <li>
+                    <a href="#">Sent Items</a>
+                </li>
+                <li>
+                    <a href="#">Trash</a>
+                </li>
+            </ul>
+        </li>
+</ul>
+    </div>
+    
+<!--Navigation Bar-->
+    
+    <div>
+            <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Example Navigation</a>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Messages</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    </div>
+    <!--Navigation Header-->
+    <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Example Navigation</a>
+        </div>
+        <!--Navigation Collapse-->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav-default navbar-fixed-top"> <!-- "navbar-fixed-top" & "navbar-fixed-bottom" can be used to fix the bar to the top/bottom AS SHOWN  -->
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Messages</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </div>    
+            <!-- Default Nav bar with a container for spacing-->
+            <nav class="navbar navbar-default navbar-fixed-bottom">
+                    <div class="container">
+                
+                
+                
+                
+                    </div>
+                </nav>
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+/**
+Name	Birthday	Address	City	State	Position Name	Remfte	
+Alison Davidson	04/05/75	874 W. Oak Place	Gary	Indiana	Customer Support	Yes	Yes
+Henry Chapelton	09/29/80	9324 E. Vista Way	Tempe	Arizona	Customer Support	No	Yes
+Alex Miller	11/22/83	244 Price Road	Mesa	Arizona	Customer Support	No	No
+Carly Nielson	08/04/87	678 W. Westward Road	Phoenix	Arizona	Office Manager	No	Yes
+Tom Talbot	12/30/89	12 Oakland Way	Chandler	Arizona	Inventory Manager	No	Yes
+Mary Crawley	07/06/80	1010 Granite Way	Charlotte	North Carolina	Human Resources	Yes	Yes
+Daisy Baxter	09/09/87	990 E. 84th St.	Tempe	Arizona	CEO	No	Yes
+William Coyle	10/11/91	944 W. 16th St.	Phoenix	Arizona	Intern	No	No
+Edith Bates	07/28/90	7 E. 20th Pl.	Chandler	Arizona	Customer Support	No	Yes
+Gwen Harding	10/11/86	234 W. 48th. St.	Phoenix	Arizona	Office Assistent	No	Yes
+ **/
+--he CEO decided that he no longer wants remote employees, 
+--so they have tranfered the remote employees to now live 
+--in Arizona. Alison Davidson now lives at 777 E. 1st St. # 120 Tempe, 
+--AZ and Mary Crawley now lives at 8322 W. Vista Pl. Scottsdale, AZ.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                           Here are my querys
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+db.employees.insertMany([
+{
+    _id: 1,
+    lastName: 'Davidson',
+    firstName: 'Alison',
+    birthDate: '04-05-1975',
+    address: "874 W. Oak Place",
+    city: 'Gary',
+    state: 'Indiana',
+    position : {
+        positionName : 'Customer Support',
+        Remote : true ,
+        fullTime : true
+    }
+},
+{
+    _id: 2,
+    lastName: 'Chapelton',
+    firstName: 'Henry',
+    birthDate: '09-29-1980',
+    address: "9324 E. Vista Way",
+    city: 'Tempe',
+    state: 'Arizona',
+    position : {
+        positionName : 'Customer Support',
+        Remote : false ,
+        fullTime : true
+    }
+},
+{
+    _id: 3,
+    lastName: 'Miller',
+    firstName: 'Alex',
+    birthDate: '11-22-1983',
+    address: "244 Price Road",
+    city: 'Mesa',
+    state: 'Arizona',
+    position : {
+        positionName : 'Customer Support',
+        Remote : false ,
+       fullTime  : false
+    }
+},
+{
+   '_id': 4,
+    lastName: 'Nielson',
+    firstName: 'Carly',
+    birthDate: '08-04-1987',
+    address: "678 W. Westward Road",
+    city: 'Phoenix',
+    state: 'Arizona',
+    position : {
+        positionName : 'Office Manager',
+        Remote : false ,
+    fullTime  : true
+    }
+},
+{
+    _id: 5,
+    lastName: 'Talbot',
+    firstName: 'Tom',
+    birthDate: '12-30-1989',
+    address: "12 Oakland Way",
+    city: 'Chandler',
+    state: 'Arizona',
+    position : {
+        positionName : 'Inventory Manager',
+        Remote : false ,
+    fullTime : true
+    }
+},
+{
+   '_id': 6,
+    lastName: 'Crawley',
+    firstName: 'Mary ',
+    birthDate: '07-06-1980',
+    address: "1010 Granite Way",
+    city: 'Charlotte',
+    state: 'North Carolina',
+    position : {
+        positionName : 'Human Resources',
+        Remote : true ,
+    fullTime    : true
+    }
+},
+{
+    _id: 7,
+    lastName: 'Baxter',
+    firstName: 'Daisy ',
+    birthDate: '09-09-1987',
+    address: "990 E. 84th St.",
+    city: 'Tempe',
+    state: 'Arizona',
+    position : {
+        positionName : 'CEO',
+        Remote : false ,
+    fullTime  : true
+    }
+},
+{
+    _id: 8,
+    lastName: 'Coyle',
+    firstName: 'William',
+    birthDate: '10-11-1991',
+    address: "944 W. 16th St.",
+    city: 'Phoenix',
+    state: 'Arizona',
+    position : {
+        positionName : 'Intern',
+        Remote : false ,
+    fullTime  : true
+    }
+},
+{
+    _id: 9,
+    lastName: 'Edith',
+    firstName: 'Bates',
+    birthDate: '07-28-1990',
+    address: "7 E. 20th Pl.",
+    city: 'Chandler',
+    state: 'Arizona',
+    position : {
+        positionName : 'Customer Support',
+        Remote : false ,
+        fullTime    : true
+    }
+},
+{
+    _id: 10,
+    lastName: 'Harding',
+    firstName: 'Gwen',
+    birthDate: '10-11-1986,
+    address: "234 W. 48th. St.",
+    city: 'Phoenix',
+    state: 'Arizona',
+    position : {
+    positionName: 'Office Assistant',
+       remote : false ,
+       fullTime : true
+    }
+}
+]);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        EXAMPLE TO HELP ME BELOW
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*
+    db.inventory.insertMany([
+  {
+    item: 'sticky note pads',
+    size: { height: 8.9, width: 9, uom: 'cm' },
+    status: 'B',
+    quantity: 5
+  },
+  {
+    item: 'pens',
+    size: { height: 12, width: 1.3, uom: 'cm' },
+    status: 'A',
+    quantity: 4
+  },
+  {
+    item: 'pencils',
+    size: { height: 13, width: 1.4, uom: 'cm' },
+    status: 'D',
+    quantity: 10
+  },
+  {
+    item: 'clipboard',
+    size: { height: 13, width: 7, uom: 'in' },
+    status: 'B',
+    quantity: 2
+  },
+  {
+    item: 'printer ink',
+    size: { height: 2, width: 3, uom: 'in' },
+    status: 'C',
+    quantity: 2
+  }
+]);
+
+*/
+--------------------------------------------------------------------------------------------------------------------
+                                            Moved People
+---------------------------------------------------------------------------------------------------------------------
+db.employees.updateOne(
+{
+    lastName: 'Crawley'
+},
+{ $set: { address: "8322 W. Vista Pl.", state: 'Arizona', city: 'Scottsdale'}}
+);
+
+-----------------------------------------------------------------------------------------------
+
+db.employees.updateOne(
+{
+    lastName: 'Davidson',
+    firstName: 'Alison'
+},
+{ $set: { address: "777 E. 1st St. # 120", state: 'Arizona', city: 'Tempe'}}
+);
+
+--------------------------------------------------------------------------------------------------------------------
+                                                        PART 2
+--------------------------------------------------------------------------------------------------------------------
+
+
+db.songs.insertMany([
+{
+    _id: 1,
+    SongId: 1,
+    title: "Girls Just Want To Have Fun"
+    details : {
+        artist : 'Cyndi Lauper',
+        album: "She's So Unusual",
+        ReleaseYear : 1983 
+    }
+    },
+    {
+    _id: 2,
+    SongId: 2,
+    title: "Hips Don't lie"
+    details : {
+        artist : 'Shakira feat. Wyclef Jean',
+        album: "She's So Unusual",
+        ReleaseYear : 2006
+    }
+    },
+    {
+    _id: 3,
+    SongId: 3,
+    title: "Poker Face"
+    details : {
+        artist : 'Lady Gaga',
+        album: "The Fame",
+        ReleaseYear : 2008 
+    }
+    },
+    {
+    _id: 4,
+    SongId: 4,
+    title: "Wannabe"
+    details : {
+        artist : 'Spice Girls',
+        album: "Spice",
+        ReleaseYear : 1996 
+    }
+    },
+    {
+    _id: 5,
+    SongId: 5,
+    title: "Califiornia Gurls"
+    details : {
+        artist : 'Katy Perry feat. Snoop Dog',
+        album: "Teenage Dream",
+        ReleaseYear : 2010 
+    }
+    },
+    {
+    _id: 6,
+    SongId: 6,
+    title: "Bye Bye Bye"
+    details : {
+        artist : 'NSYNC',
+        album: "No Strings Attached",
+        ReleaseYear : 2000
+    }
+    },
+    {
+    _id: 7,
+    SongId: 7,
+    title: "I Will Always Love You"
+    details : {
+        artist : 'Whitney Houston',
+        album: "I Will Always Love You: The Best Of Whitney Houston",
+        ReleaseYear : 2012 
+    }
+    },
+    {
+    _id: 8,
+    SongId: 8,
+    title: "...Baby One More Time"
+    details : {
+        artist : 'Britney Spears',
+        album: "...Baby One More Time",
+        ReleaseYear : 1999 
+    }
+    },
+    {
+    _id: 9,
+    SongId: 9,
+    title: "Vogue"
+    details : {
+        artist : 'Madonna',
+        album: "I'm Breathless",
+        ReleaseYear : 1990 
+    }
+    },
+    {
+    _id: 10,
+    SongId: 10,
+    title: "1234"
+    details : {
+        artist : 'Adele',
+        album: "21",
+        ReleaseYear : 2011
+    
+    },
+    {
+    _id: 11,
+    SongId: 11,
+    title: "1234"
+    details : {
+        artist : 'Fiest',
+        album: "The Reminder",
+        ReleaseYear : 2007
+    }
+    },
+    {
+    _id: 12,
+    SongId: 12,
+    title: "Elastic Heart"
+    details : {
+        artist : 'Sia',
+        album: "The Hunger Games: Catching Fire Soundtrack",
+        ReleaseYear : 2015 
+    }
+    },
+    {
+    _id: 13,
+    SongId: 13,
+    title: "Oops!.. I Did it Again"
+    details : {
+        artist : 'Brittney Spears',
+        album: "Oops!.. I Did it Again",
+        ReleaseYear : 2000 
+    }
+    },
+    {
+    _id: 14,
+    SongId: 14,
+    title: "Bad Romance"
+    details : {
+        artist : 'Lady Gaga',
+        album: "The Fame Monster",
+        ReleaseYear : 2009 
+    }
+    },
+    {
+    _id: 15,
+    SongId: 15,
+    title: "Lose Control"
+    details : {
+        artist : 'Missy Elliot',
+        album: "THe Cookbook",
+        ReleaseYear : 2005 
+    }
+    },
+    {
+    _id: 16,
+    SongId: 16,
+    title: "U Can't Touch This"
+    details : {
+        artist : 'MC Hammer',
+        album: "Please Hammer, Don't Hurt 'Em",
+        ReleaseYear : 1990 
+    }
+    },
+    {
+    _id: 17,
+    SongId: 17,
+    title: "Thriller"
+    details : {
+        artist : 'Michael Jackson',
+        album: "Thriller",
+        ReleaseYear : 1982 
+    }
+    },
+    {
+    _id: 18,
+    SongId: 18,
+    title: "Single Ladies"
+    details : {
+        artist : 'Beyonce',
+        album: "I am...Sasha Fierce",
+        ReleaseYear : 2008 
+    }
+    },
+    {
+    _id: 19,
+    SongId: 19,
+    title: "Rhythm Nation"
+    details : {
+        artist : 'Janet Jackson',
+        album: "Janet Jackson's Rhythm Nation 1814",
+        ReleaseYear : 1989 
+      }
+    }
+]);
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+                                                            UPDATE QUERYS
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--Updates All "title"(s) to be "SongTitle"
+
+db.songs.updateMany({}, {$rename: { title: 'SongTitle' }});
+
+--Upadte embeddd doc of "artist" to be taken out and placed at the end of the doc instead
+
+db.songs.updateMany({}, {$rename: { "details.artist" : 'Artist' }});
